@@ -17,11 +17,15 @@ void draw_roof(GLuint id) {
 }
 
 void draw_door(GLuint id) {
-    draw_cube(id, 10, 13, 1, brown, blue);
+    draw_cube(id, 10, 11, 1, brown, blue);
 }
 
 void draw_window(GLuint id) {
     draw_cube(id, 50, 4, 0.5, beige, beige);
+}
+
+void draw_island(GLuint id) {
+    draw_cube(id, 10, 0.5, 10, gray, gray);
 }
 
 #endif //OPENGL_KITCHEN_PROJECT_KITCHEN_H

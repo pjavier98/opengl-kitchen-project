@@ -6,11 +6,16 @@ CMakeFiles/opengl_kitchen_project.dir/lib/Camera.cpp.o: \
  ../lib/Camera.h \
  ../lib/constants.h \
  ../lib/vertex.h
+CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader.cpp.o: \
+ ../lib/obj_loader.cpp \
+ ../lib/obj_loader.h \
+ ../lib/vertex.h
 CMakeFiles/opengl_kitchen_project.dir/main.cpp.o: \
  ../lib/Camera.h \
  ../lib/colors.h \
  ../lib/constants.h \
  ../lib/kitchen.h \
+ ../lib/obj_loader.h \
  ../lib/object.h \
  ../lib/primitive.h \
  ../lib/vertex.h \

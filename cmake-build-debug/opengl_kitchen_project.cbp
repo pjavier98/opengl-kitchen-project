@@ -97,6 +97,12 @@
 		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/kitchen.h">
 			<Option target="opengl_kitchen_project"/>
 		</Unit>
+		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader.cpp">
+			<Option target="opengl_kitchen_project"/>
+		</Unit>
+		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader.h">
+			<Option target="opengl_kitchen_project"/>
+		</Unit>
 		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/object.h">
 			<Option target="opengl_kitchen_project"/>
 		</Unit>

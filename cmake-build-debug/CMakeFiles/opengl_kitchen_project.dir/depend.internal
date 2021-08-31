@@ -6,11 +6,16 @@ CMakeFiles/opengl_kitchen_project.dir/lib/Camera.cpp.o
  /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/Camera.h
  /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/constants.h
  /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/vertex.h
+CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader.cpp.o
+ /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader.cpp
+ /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader.h
+ /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/vertex.h
 CMakeFiles/opengl_kitchen_project.dir/main.cpp.o
  /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/Camera.h
  /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/colors.h
  /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/constants.h
  /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/kitchen.h
+ /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader.h
  /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/object.h
  /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/primitive.h
  /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/vertex.h

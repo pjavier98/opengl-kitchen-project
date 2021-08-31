@@ -153,6 +153,30 @@ lib/Camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/Camera.cpp.s
 .PHONY : lib/Camera.cpp.s
 
+lib/obj_loader.o: lib/obj_loader.cpp.o
+.PHONY : lib/obj_loader.o
+
+# target to build an object file
+lib/obj_loader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader.cpp.o
+.PHONY : lib/obj_loader.cpp.o
+
+lib/obj_loader.i: lib/obj_loader.cpp.i
+.PHONY : lib/obj_loader.i
+
+# target to preprocess a source file
+lib/obj_loader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader.cpp.i
+.PHONY : lib/obj_loader.cpp.i
+
+lib/obj_loader.s: lib/obj_loader.cpp.s
+.PHONY : lib/obj_loader.s
+
+# target to generate assembly for a file
+lib/obj_loader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader.cpp.s
+.PHONY : lib/obj_loader.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... lib/Camera.o"
 	@echo "... lib/Camera.i"
 	@echo "... lib/Camera.s"
+	@echo "... lib/obj_loader.o"
+	@echo "... lib/obj_loader.i"
+	@echo "... lib/obj_loader.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
