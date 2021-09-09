@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/opengl_kitchen_project.dir/main.cpp.o CMakeFiles/opengl_kitchen_project.dir/lib/Camera.cpp.o CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader.cpp.o -o opengl_kitchen_project  -lglut -lglfw -lGLEW -lGL -lGLU 
+/usr/bin/c++ -g CMakeFiles/opengl_kitchen_project.dir/main.cpp.o CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.o CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.o -o opengl_kitchen_project  -lglut -lglfw -lGLEW -lGL -lGLU 

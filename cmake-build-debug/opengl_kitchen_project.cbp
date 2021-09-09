@@ -82,10 +82,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/Camera.cpp">
+		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/camera/Camera.cpp">
 			<Option target="opengl_kitchen_project"/>
 		</Unit>
-		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/Camera.h">
+		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/camera/Camera.h">
 			<Option target="opengl_kitchen_project"/>
 		</Unit>
 		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/colors.h">
@@ -97,10 +97,10 @@
 		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/kitchen.h">
 			<Option target="opengl_kitchen_project"/>
 		</Unit>
-		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader.cpp">
+		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader/obj_loader.cpp">
 			<Option target="opengl_kitchen_project"/>
 		</Unit>
-		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader.h">
+		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader/obj_loader.h">
 			<Option target="opengl_kitchen_project"/>
 		</Unit>
 		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/object.h">

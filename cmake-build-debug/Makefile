@@ -129,53 +129,53 @@ opengl_kitchen_project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/build
 .PHONY : opengl_kitchen_project/fast
 
-lib/Camera.o: lib/Camera.cpp.o
-.PHONY : lib/Camera.o
+lib/camera/Camera.o: lib/camera/Camera.cpp.o
+.PHONY : lib/camera/Camera.o
 
 # target to build an object file
-lib/Camera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/Camera.cpp.o
-.PHONY : lib/Camera.cpp.o
+lib/camera/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.o
+.PHONY : lib/camera/Camera.cpp.o
 
-lib/Camera.i: lib/Camera.cpp.i
-.PHONY : lib/Camera.i
+lib/camera/Camera.i: lib/camera/Camera.cpp.i
+.PHONY : lib/camera/Camera.i
 
 # target to preprocess a source file
-lib/Camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/Camera.cpp.i
-.PHONY : lib/Camera.cpp.i
+lib/camera/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.i
+.PHONY : lib/camera/Camera.cpp.i
 
-lib/Camera.s: lib/Camera.cpp.s
-.PHONY : lib/Camera.s
+lib/camera/Camera.s: lib/camera/Camera.cpp.s
+.PHONY : lib/camera/Camera.s
 
 # target to generate assembly for a file
-lib/Camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/Camera.cpp.s
-.PHONY : lib/Camera.cpp.s
+lib/camera/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.s
+.PHONY : lib/camera/Camera.cpp.s
 
-lib/obj_loader.o: lib/obj_loader.cpp.o
-.PHONY : lib/obj_loader.o
+lib/obj_loader/obj_loader.o: lib/obj_loader/obj_loader.cpp.o
+.PHONY : lib/obj_loader/obj_loader.o
 
 # target to build an object file
-lib/obj_loader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader.cpp.o
-.PHONY : lib/obj_loader.cpp.o
+lib/obj_loader/obj_loader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.o
+.PHONY : lib/obj_loader/obj_loader.cpp.o
 
-lib/obj_loader.i: lib/obj_loader.cpp.i
-.PHONY : lib/obj_loader.i
+lib/obj_loader/obj_loader.i: lib/obj_loader/obj_loader.cpp.i
+.PHONY : lib/obj_loader/obj_loader.i
 
 # target to preprocess a source file
-lib/obj_loader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader.cpp.i
-.PHONY : lib/obj_loader.cpp.i
+lib/obj_loader/obj_loader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.i
+.PHONY : lib/obj_loader/obj_loader.cpp.i
 
-lib/obj_loader.s: lib/obj_loader.cpp.s
-.PHONY : lib/obj_loader.s
+lib/obj_loader/obj_loader.s: lib/obj_loader/obj_loader.cpp.s
+.PHONY : lib/obj_loader/obj_loader.s
 
 # target to generate assembly for a file
-lib/obj_loader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader.cpp.s
-.PHONY : lib/obj_loader.cpp.s
+lib/obj_loader/obj_loader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.s
+.PHONY : lib/obj_loader/obj_loader.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -210,12 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... opengl_kitchen_project"
-	@echo "... lib/Camera.o"
-	@echo "... lib/Camera.i"
-	@echo "... lib/Camera.s"
-	@echo "... lib/obj_loader.o"
-	@echo "... lib/obj_loader.i"
-	@echo "... lib/obj_loader.s"
+	@echo "... lib/camera/Camera.o"
+	@echo "... lib/camera/Camera.i"
+	@echo "... lib/camera/Camera.s"
+	@echo "... lib/obj_loader/obj_loader.o"
+	@echo "... lib/obj_loader/obj_loader.i"
+	@echo "... lib/obj_loader/obj_loader.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -6,8 +6,8 @@
 
 #IncludeRegexTransform: 
 
-/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/Camera.h
-vertex.h
+/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/camera/Camera.h
+../vertex.h
 /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/vertex.h
 
 /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/colors.h
@@ -22,14 +22,14 @@ primitive.h
 colors.h
 /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/colors.h
 
-/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader.h
+/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader/obj_loader.h
 iostream
 -
 fstream
 -
 sstream
 -
-vertex.h
+../vertex.h
 /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/vertex.h
 
 /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/object.h
@@ -63,10 +63,10 @@ GL/glu.h
 -
 lib/object.h
 /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/object.h
-lib/Camera.h
-/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/Camera.h
+lib/camera/Camera.h
+/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/camera/Camera.h
 lib/kitchen.h
 /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/kitchen.h
-lib/obj_loader.h
-/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader.h
+lib/obj_loader/obj_loader.h
+/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader/obj_loader.h
 

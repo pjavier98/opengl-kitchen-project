@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include "vertex.h"
+#include "../vertex.h"
 
 using namespace std;
 

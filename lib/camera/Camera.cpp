@@ -2,7 +2,7 @@
 
 #include <cmath>
 #include "Camera.h"
-#include "constants.h"
+#include "../constants.h"
 
 Camera::Camera(vertex3 initial_position) {
     position = vertex3(initial_position);

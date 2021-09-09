@@ -1,7 +1,7 @@
 #ifndef OPENGL_KITCHEN_PROJECT_CAMERA_H
 #define OPENGL_KITCHEN_PROJECT_CAMERA_H
 
-#include "vertex.h"
+#include "../vertex.h"
 
 class Camera {
     private:

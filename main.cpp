@@ -2,9 +2,9 @@
 #include <GLFW/glfw3.h>
 #include <GL/glu.h>
 #include "lib/object.h"
-#include "lib/Camera.h"
+#include "lib/camera/Camera.h"
 #include "lib/kitchen.h"
-#include "lib/obj_loader.h"
+#include "lib/obj_loader/obj_loader.h"
 
 using namespace std;
 
@@ -27,7 +27,7 @@ static float debug_value = 1.0;
 
 vector<Object> objects;
 vector<Object> blender_objects;
-Camera camera(vertex3(0, 10, 0));
+Camera camera(vertex3(-20, 10, 20));
 
 static unsigned blend_id;
 
@@ -329,7 +329,8 @@ void cursor_callback(GLFWwindow* window, double x_pos, double y_pos) {
 
 void init(GLFWwindow* window) {
     glfwSetCursorPosCallback(window, cursor_callback);
-//    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+    glfwMaximizeWindow(window);
     glfwSetKeyCallback(window, keyboard_callback);
 
     // Set background color
