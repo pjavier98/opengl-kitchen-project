@@ -8,9 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/camera/Camera.cpp" "/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.o"
-  "/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader/obj_loader.cpp" "/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.o"
-  "/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/main.cpp" "/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles/opengl_kitchen_project.dir/main.cpp.o"
+  "/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/camera/Camera.cpp" "/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.o"
+  "/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/obj_loader/obj_loader.cpp" "/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.o"
+  "/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/stb_image/stb_image.cpp" "/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles/opengl_kitchen_project.dir/lib/stb_image/stb_image.cpp.o"
+  "/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/texture/texture.cpp" "/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles/opengl_kitchen_project.dir/lib/texture/texture.cpp.o"
+  "/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/main.cpp" "/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles/opengl_kitchen_project.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

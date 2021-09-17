@@ -57,10 +57,10 @@ RM = /snap/clion/163/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project
+CMAKE_SOURCE_DIR = /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug
+CMAKE_BINARY_DIR = /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,54 @@ lib/obj_loader/obj_loader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.s
 .PHONY : lib/obj_loader/obj_loader.cpp.s
 
+lib/stb_image/stb_image.o: lib/stb_image/stb_image.cpp.o
+.PHONY : lib/stb_image/stb_image.o
+
+# target to build an object file
+lib/stb_image/stb_image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/stb_image/stb_image.cpp.o
+.PHONY : lib/stb_image/stb_image.cpp.o
+
+lib/stb_image/stb_image.i: lib/stb_image/stb_image.cpp.i
+.PHONY : lib/stb_image/stb_image.i
+
+# target to preprocess a source file
+lib/stb_image/stb_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/stb_image/stb_image.cpp.i
+.PHONY : lib/stb_image/stb_image.cpp.i
+
+lib/stb_image/stb_image.s: lib/stb_image/stb_image.cpp.s
+.PHONY : lib/stb_image/stb_image.s
+
+# target to generate assembly for a file
+lib/stb_image/stb_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/stb_image/stb_image.cpp.s
+.PHONY : lib/stb_image/stb_image.cpp.s
+
+lib/texture/texture.o: lib/texture/texture.cpp.o
+.PHONY : lib/texture/texture.o
+
+# target to build an object file
+lib/texture/texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/texture/texture.cpp.o
+.PHONY : lib/texture/texture.cpp.o
+
+lib/texture/texture.i: lib/texture/texture.cpp.i
+.PHONY : lib/texture/texture.i
+
+# target to preprocess a source file
+lib/texture/texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/texture/texture.cpp.i
+.PHONY : lib/texture/texture.cpp.i
+
+lib/texture/texture.s: lib/texture/texture.cpp.s
+.PHONY : lib/texture/texture.s
+
+# target to generate assembly for a file
+lib/texture/texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_kitchen_project.dir/build.make CMakeFiles/opengl_kitchen_project.dir/lib/texture/texture.cpp.s
+.PHONY : lib/texture/texture.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -216,6 +264,12 @@ help:
 	@echo "... lib/obj_loader/obj_loader.o"
 	@echo "... lib/obj_loader/obj_loader.i"
 	@echo "... lib/obj_loader/obj_loader.s"
+	@echo "... lib/stb_image/stb_image.o"
+	@echo "... lib/stb_image/stb_image.i"
+	@echo "... lib/stb_image/stb_image.s"
+	@echo "... lib/texture/texture.o"
+	@echo "... lib/texture/texture.i"
+	@echo "... lib/texture/texture.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

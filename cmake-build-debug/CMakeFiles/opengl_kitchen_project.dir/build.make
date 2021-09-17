@@ -53,10 +53,10 @@ RM = /snap/clion/163/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project
+CMAKE_SOURCE_DIR = /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug
+CMAKE_BINARY_DIR = /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/opengl_kitchen_project.dir/depend.make
@@ -68,48 +68,76 @@ include CMakeFiles/opengl_kitchen_project.dir/flags.make
 
 CMakeFiles/opengl_kitchen_project.dir/main.cpp.o: CMakeFiles/opengl_kitchen_project.dir/flags.make
 CMakeFiles/opengl_kitchen_project.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opengl_kitchen_project.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opengl_kitchen_project.dir/main.cpp.o -c /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opengl_kitchen_project.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opengl_kitchen_project.dir/main.cpp.o -c /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/main.cpp
 
 CMakeFiles/opengl_kitchen_project.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl_kitchen_project.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/main.cpp > CMakeFiles/opengl_kitchen_project.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/main.cpp > CMakeFiles/opengl_kitchen_project.dir/main.cpp.i
 
 CMakeFiles/opengl_kitchen_project.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl_kitchen_project.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/main.cpp -o CMakeFiles/opengl_kitchen_project.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/main.cpp -o CMakeFiles/opengl_kitchen_project.dir/main.cpp.s
 
 CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.o: CMakeFiles/opengl_kitchen_project.dir/flags.make
 CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.o: ../lib/camera/Camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.o -c /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/camera/Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.o -c /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/camera/Camera.cpp
 
 CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/camera/Camera.cpp > CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/camera/Camera.cpp > CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.i
 
 CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/camera/Camera.cpp -o CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/camera/Camera.cpp -o CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.s
 
 CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.o: CMakeFiles/opengl_kitchen_project.dir/flags.make
 CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.o: ../lib/obj_loader/obj_loader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.o -c /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader/obj_loader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.o -c /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/obj_loader/obj_loader.cpp
 
 CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader/obj_loader.cpp > CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/obj_loader/obj_loader.cpp > CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.i
 
 CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader/obj_loader.cpp -o CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/obj_loader/obj_loader.cpp -o CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.s
+
+CMakeFiles/opengl_kitchen_project.dir/lib/stb_image/stb_image.cpp.o: CMakeFiles/opengl_kitchen_project.dir/flags.make
+CMakeFiles/opengl_kitchen_project.dir/lib/stb_image/stb_image.cpp.o: ../lib/stb_image/stb_image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/opengl_kitchen_project.dir/lib/stb_image/stb_image.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opengl_kitchen_project.dir/lib/stb_image/stb_image.cpp.o -c /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/stb_image/stb_image.cpp
+
+CMakeFiles/opengl_kitchen_project.dir/lib/stb_image/stb_image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl_kitchen_project.dir/lib/stb_image/stb_image.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/stb_image/stb_image.cpp > CMakeFiles/opengl_kitchen_project.dir/lib/stb_image/stb_image.cpp.i
+
+CMakeFiles/opengl_kitchen_project.dir/lib/stb_image/stb_image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl_kitchen_project.dir/lib/stb_image/stb_image.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/stb_image/stb_image.cpp -o CMakeFiles/opengl_kitchen_project.dir/lib/stb_image/stb_image.cpp.s
+
+CMakeFiles/opengl_kitchen_project.dir/lib/texture/texture.cpp.o: CMakeFiles/opengl_kitchen_project.dir/flags.make
+CMakeFiles/opengl_kitchen_project.dir/lib/texture/texture.cpp.o: ../lib/texture/texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/opengl_kitchen_project.dir/lib/texture/texture.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opengl_kitchen_project.dir/lib/texture/texture.cpp.o -c /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/texture/texture.cpp
+
+CMakeFiles/opengl_kitchen_project.dir/lib/texture/texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl_kitchen_project.dir/lib/texture/texture.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/texture/texture.cpp > CMakeFiles/opengl_kitchen_project.dir/lib/texture/texture.cpp.i
+
+CMakeFiles/opengl_kitchen_project.dir/lib/texture/texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl_kitchen_project.dir/lib/texture/texture.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/texture/texture.cpp -o CMakeFiles/opengl_kitchen_project.dir/lib/texture/texture.cpp.s
 
 # Object files for target opengl_kitchen_project
 opengl_kitchen_project_OBJECTS = \
 "CMakeFiles/opengl_kitchen_project.dir/main.cpp.o" \
 "CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.o" \
-"CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.o"
+"CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.o" \
+"CMakeFiles/opengl_kitchen_project.dir/lib/stb_image/stb_image.cpp.o" \
+"CMakeFiles/opengl_kitchen_project.dir/lib/texture/texture.cpp.o"
 
 # External object files for target opengl_kitchen_project
 opengl_kitchen_project_EXTERNAL_OBJECTS =
@@ -117,9 +145,11 @@ opengl_kitchen_project_EXTERNAL_OBJECTS =
 opengl_kitchen_project: CMakeFiles/opengl_kitchen_project.dir/main.cpp.o
 opengl_kitchen_project: CMakeFiles/opengl_kitchen_project.dir/lib/camera/Camera.cpp.o
 opengl_kitchen_project: CMakeFiles/opengl_kitchen_project.dir/lib/obj_loader/obj_loader.cpp.o
+opengl_kitchen_project: CMakeFiles/opengl_kitchen_project.dir/lib/stb_image/stb_image.cpp.o
+opengl_kitchen_project: CMakeFiles/opengl_kitchen_project.dir/lib/texture/texture.cpp.o
 opengl_kitchen_project: CMakeFiles/opengl_kitchen_project.dir/build.make
 opengl_kitchen_project: CMakeFiles/opengl_kitchen_project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable opengl_kitchen_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable opengl_kitchen_project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opengl_kitchen_project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -131,6 +161,6 @@ CMakeFiles/opengl_kitchen_project.dir/clean:
 .PHONY : CMakeFiles/opengl_kitchen_project.dir/clean
 
 CMakeFiles/opengl_kitchen_project.dir/depend:
-	cd /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles/opengl_kitchen_project.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/CMakeFiles/opengl_kitchen_project.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/opengl_kitchen_project.dir/depend
 

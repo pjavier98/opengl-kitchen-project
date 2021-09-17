@@ -1,4 +1,4 @@
-# Install script for directory: /home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project
+# Install script for directory: /home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

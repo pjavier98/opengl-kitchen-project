@@ -6,20 +6,20 @@
 #include "constants.h"
 #include "vertex.h"
 #include "colors.h"
+#include "texture/texture.h"
 
 using namespace std;
 
-void make_rectangle_face(vertex3 vertex_1, vertex3 vertex_2, vertex3 vertex_3, vertex3 vertex_4, color color) {
-    glColor3fv(color);
+void make_rectangle_face(vertex3 vertex_1, vertex3 vertex_2, vertex3 vertex_3, vertex3 vertex_4) {
     glBegin(GL_QUADS);
-        glVertex3fv(&vertex_1.x);
-        glVertex3fv(&vertex_2.x);
-        glVertex3fv(&vertex_3.x);
-        glVertex3fv(&vertex_4.x);
+        glTexCoord2f(0.0, 0.0);  glVertex3fv(&vertex_1.x);
+        glTexCoord2f(1.0, 0.0);  glVertex3fv(&vertex_2.x);
+        glTexCoord2f(1.0, 1.0);  glVertex3fv(&vertex_3.x);
+        glTexCoord2f(0.0, 1.0);  glVertex3fv(&vertex_4.x);
     glEnd();
 }
 
-void draw_cube(GLuint id, float width, float height, float depth, color primary_color, color secondary_color) {
+void draw_cube(GLuint id, float width, float height, float depth, texture* texture) {
     vertex3 v1(-width, height, depth);
     vertex3 v2(-width, -height, depth);
     vertex3 v3(width, -height, depth);
@@ -32,23 +32,25 @@ void draw_cube(GLuint id, float width, float height, float depth, color primary_
 
     glNewList(id, GL_COMPILE);
     glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+    texture->bind();
         // front face
-        make_rectangle_face(v1, v2, v3, v4, secondary_color);
+        make_rectangle_face(v1, v2, v3, v4);
 
         // right face
-        make_rectangle_face(v4, v3 ,v6, v5, secondary_color);
+        make_rectangle_face(v4, v3 ,v6, v5);
 
         // back face
-        make_rectangle_face(v5, v8, v7, v6, secondary_color);
+        make_rectangle_face(v5, v8, v7, v6);
 
         // left face
-        make_rectangle_face(v1, v8, v7, v2, secondary_color);
+        make_rectangle_face(v1, v8, v7, v2);
 
         // top face
-        make_rectangle_face(v1, v4, v5, v8, primary_color);
+        make_rectangle_face(v1, v4, v5, v8);
 
         // bottom face
-        make_rectangle_face(v2, v7, v6, v3, primary_color);
+        make_rectangle_face(v2, v7, v6, v3);
+    texture->unbind();
     glEndList();
 }
 

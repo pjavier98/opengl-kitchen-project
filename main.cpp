@@ -5,6 +5,7 @@
 #include "lib/camera/Camera.h"
 #include "lib/kitchen.h"
 #include "lib/obj_loader/obj_loader.h"
+#include "lib/texture/texture.h"
 
 using namespace std;
 
@@ -22,11 +23,13 @@ static float debug_x = 0;
 static float debug_y = 0;
 static float debug_z = 0;
 static float debug_scale = 3;
+static float debug_angle = 0;
 
 static float debug_value = 1.0;
 
 vector<Object> objects;
 vector<Object> blender_objects;
+texture textures_list[TOTAL_AMOUNT_TEXTURES_OBJECTS];
 Camera camera(vertex3(-20, 10, 20));
 
 static unsigned blend_id;
@@ -127,6 +130,7 @@ void make_draw(float dt) {
     // stove
     glPushMatrix();
         glTranslatef(27.0, 4.0, -47.0);
+        glRotatef(90, 6, 0, 0);
         glCallList(objects[12].id);
     glPopMatrix();
 
@@ -161,12 +165,9 @@ void make_draw(float dt) {
         glCallList(objects[17].id);
     glPopMatrix();
 
-    // refrigerator
     glPushMatrix();
-        glTranslatef(0.0, 0.0, -47);
-        glRotatef(90, 0.0, -1, 0.0);
-        glScalef(3, 3, 3);
-        glCallList(blender_objects[0].id);
+        glTranslatef(0, 10, -46);
+        glCallList(objects[18].id);
     glPopMatrix();
 
     // island chairs
@@ -233,12 +234,6 @@ void make_draw(float dt) {
         glCallList(blender_objects[9].id);
     glPopMatrix();
 
-//    glPushMatrix();
-//        glTranslatef(debug_x, debug_y, debug_z);
-//        glScalef(debug_scale, debug_scale, debug_scale);
-//        glCallList(blend_id);
-//    glPopMatrix();
-
     if (is_door_open && door_x_position < -20) {
         door_x_position += 0.1;
     } else if (!is_door_open && door_x_position > -40) {
@@ -301,6 +296,8 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
         is_window_open = false;
     } else if (key == GLFW_KEY_E) {
         debug_scale += debug_value;
+    } else if (key == GLFW_KEY_U) {
+        debug_angle += debug_value;
     }
 
     if (key == GLFW_KEY_X || key == GLFW_KEY_Y || key == GLFW_KEY_Z) {
@@ -333,9 +330,16 @@ void init(GLFWwindow* window) {
     glfwMaximizeWindow(window);
     glfwSetKeyCallback(window, keyboard_callback);
 
+    glEnable(GL_DEPTH_TEST);
+//    glEnable(GL_LIGHTING);
+//    glEnable(GL_LIGHT0);
+//    glEnable(GL_COLOR_MATERIAL);
+
+
     // Set background color
     glClearColor(0.0, 0.0, 0.0, 0.1);
-    glEnable(GL_DEPTH_TEST);
+    glEnable(GL_TEXTURE_2D);
+    glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_REPLACE);
 
     for (int i = 0; i < TOTAL_AMOUNT_OBJECTS; i++) {
         Object new_obj;
@@ -358,55 +362,68 @@ void init(GLFWwindow* window) {
         blender_objects[i].id = blender_objects[0].id + i;
     }
 
+    // textures
+    textures_list[0].load("../images/door.jpg");
+    textures_list[1].load("../images/floor.jpg");
+    textures_list[2].load("../images/wall.png");
+    textures_list[3].load("../images/island.jpg");
+    textures_list[4].load("../images/window.jpg");
+    textures_list[5].load("../images/picture.jpeg");
+    textures_list[6].load("../images/second_picture.jpeg");
+    textures_list[7].load("../images/carpet.jpg");
+    textures_list[8].load("../images/carpet.jpg");
+    textures_list[9].load("../images/stove.jpg");
+    textures_list[10].load("../images/forniture.jpg");
+    textures_list[11].load("../images/refrigerator.jpg");
+
     // draw internal floor
-    draw_floor(objects[0].id);
+    draw_floor(objects[0].id, &textures_list[1]);
 
     // draw walls
-    draw_wall(objects[1].id);
-    draw_wall(objects[2].id);
+    draw_wall(objects[1].id, &textures_list[2]);
+    draw_wall(objects[2].id, &textures_list[2]);
 
     // wall + space to door
-    draw_wall(objects[3].id, 40, 11, 1);
+    draw_wall(objects[3].id, &textures_list[2], 40, 11, 1);
 
     // wall + window
-    draw_wall(objects[4].id, 50, 3, 1);
-    draw_wall(objects[5].id, 50, 4, 1);
+    draw_wall(objects[4].id, &textures_list[2], 50, 3, 1);
+    draw_wall(objects[5].id, &textures_list[2], 50, 4, 1);
 
     // door
-    draw_door(objects[6].id);
+    draw_door(objects[6].id, &textures_list[0]);
 
     // window
-    draw_window(objects[7].id);
+    draw_window(objects[7].id, &textures_list[4]);
 
     // roof
-    draw_roof(objects[8].id);
+    draw_roof(objects[8].id, &textures_list[2]);
 
     // island
-    draw_cube(objects[9].id, 8, 2, 8, blue, blue);
-    draw_island(objects[10].id);
+    draw_cube(objects[9].id, 8, 2, 8, &textures_list[3]);
+    draw_island(objects[10].id, &textures_list[3]);
 
     // kitchen countertop
-    draw_cube(objects[11].id, 8, 3, 4, gray, gray);
+    draw_cube(objects[11].id, 8, 3, 4, &textures_list[10]);
 
     // stove
-    draw_cube(objects[12].id, 4, 3, 4, red, red);
+    draw_cube(objects[12].id, 4, 4, 4, &textures_list[9]);
 
     // kitchen countertop
-    draw_cube(objects[13].id, 9, 3, 4, gray, gray);
+    draw_cube(objects[13].id, 9, 3, 4, &textures_list[10]);
 
     // forniture
-    draw_cube(objects[14].id, 22, 3, 4, gray, gray);
+    draw_cube(objects[14].id, 22, 3, 4, &textures_list[10]);
 
     // carpet
-    draw_cube(objects[15].id, 10, 0.1, 5, red, red);
+    draw_cube(objects[15].id, 10, 0.1, 5, &textures_list[8]);
 
     // picture
-    draw_cube(objects[16].id, 5, 5, 0.1, light_blue, light_blue);
-    draw_cube(objects[17].id, 5, 5, 0.1, gray, gray);
+    draw_cube(objects[16].id, 5, 5, 0.1, &textures_list[5]);
+    draw_cube(objects[17].id, 5, 5, 0.1, &textures_list[6]);
 
-
-    // refrigerator
-    ObjLoader::load_object(blender_objects[0].id, "../objects/refrigerator/source/refrigerator.obj");
+    // refrigarator
+    draw_cube(objects[18].id, 4, 10, 4, &textures_list[11]);
 
     // island_chair
     ObjLoader::load_object(blender_objects[1].id, "../objects/island_chair/island_chair.obj");

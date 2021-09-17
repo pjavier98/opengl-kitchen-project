@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug"/>
+				<Option working_dir="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug"/>
+				<Option working_dir="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug"/>
+				<Option working_dir="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="opengl_kitchen_project">
-				<Option output="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/opengl_kitchen_project" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug"/>
+				<Option output="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/opengl_kitchen_project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,15 +53,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 opengl_kitchen_project"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 opengl_kitchen_project"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="opengl_kitchen_project/fast">
-				<Option output="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/opengl_kitchen_project" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug"/>
+				<Option output="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/opengl_kitchen_project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -75,47 +75,59 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 opengl_kitchen_project/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 opengl_kitchen_project/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/camera/Camera.cpp">
+		<Unit filename="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/camera/Camera.cpp">
 			<Option target="opengl_kitchen_project"/>
 		</Unit>
-		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/camera/Camera.h">
+		<Unit filename="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/camera/Camera.h">
 			<Option target="opengl_kitchen_project"/>
 		</Unit>
-		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/colors.h">
+		<Unit filename="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/colors.h">
 			<Option target="opengl_kitchen_project"/>
 		</Unit>
-		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/constants.h">
+		<Unit filename="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/constants.h">
 			<Option target="opengl_kitchen_project"/>
 		</Unit>
-		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/kitchen.h">
+		<Unit filename="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/kitchen.h">
 			<Option target="opengl_kitchen_project"/>
 		</Unit>
-		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader/obj_loader.cpp">
+		<Unit filename="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/obj_loader/obj_loader.cpp">
 			<Option target="opengl_kitchen_project"/>
 		</Unit>
-		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/obj_loader/obj_loader.h">
+		<Unit filename="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/obj_loader/obj_loader.h">
 			<Option target="opengl_kitchen_project"/>
 		</Unit>
-		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/object.h">
+		<Unit filename="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/object.h">
 			<Option target="opengl_kitchen_project"/>
 		</Unit>
-		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/primitive.h">
+		<Unit filename="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/primitive.h">
 			<Option target="opengl_kitchen_project"/>
 		</Unit>
-		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/lib/vertex.h">
+		<Unit filename="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/stb_image/stb_image.cpp">
 			<Option target="opengl_kitchen_project"/>
 		</Unit>
-		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/main.cpp">
+		<Unit filename="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/stb_image/stb_image.h">
 			<Option target="opengl_kitchen_project"/>
 		</Unit>
-		<Unit filename="/home/scar/Documents/PJ/UFAL/CG/opengl-kitchen-project/CMakeLists.txt">
+		<Unit filename="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/texture/texture.cpp">
+			<Option target="opengl_kitchen_project"/>
+		</Unit>
+		<Unit filename="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/texture/texture.h">
+			<Option target="opengl_kitchen_project"/>
+		</Unit>
+		<Unit filename="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/lib/vertex.h">
+			<Option target="opengl_kitchen_project"/>
+		</Unit>
+		<Unit filename="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/main.cpp">
+			<Option target="opengl_kitchen_project"/>
+		</Unit>
+		<Unit filename="/home/scar/Documents/PJ/UFAL/Materias/CG/opengl-kitchen-project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
