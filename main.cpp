@@ -37,9 +37,6 @@ vector<Object> blender_objects;
 texture textures_list[TOTAL_AMOUNT_TEXTURES_OBJECTS];
 Camera camera(vertex3(-20, 10, 20));
 
-static unsigned blend_id;
-
-
 void make_resize(int frame_buffer_width, int frame_buffer_height) {
     glViewport(0, 0, frame_buffer_width, frame_buffer_height);
 
@@ -53,7 +50,7 @@ void make_resize(int frame_buffer_width, int frame_buffer_height) {
     glMatrixMode(GL_MODELVIEW);
 }
 
-void enable_ligthing() {
+void enable_lighting() {
     float light0[4][4] = {
         { 0.1f, 0.1f, 0.1f, 0.1f}, // ambient
         { 0.8f, 0.8f, 0.8f, 0.8f},	// diffuse
@@ -61,10 +58,26 @@ void enable_ligthing() {
         { 0.0f, 0.0f, -50.0f, 1.0f} // position
     };
 
-    glLightfv(GL_LIGHT0, GL_AMBIENT, &light0[0][0]);
-    glLightfv(GL_LIGHT0, GL_DIFFUSE, &light0[1][0]);
-    glLightfv(GL_LIGHT0, GL_SPECULAR, &light0[2][0]);
-    glLightfv(GL_LIGHT0, GL_POSITION, &light0[3][0]);
+    float light1[3][4] = {
+        { 0.0f, 0.0f, 0.0f },
+        { 0.0f, 18.0f, 0.0f, 1.0f },
+        { 1.f, 1.f, 1.f },
+    };
+
+    glMaterialfv(GL_LIGHT1, GL_SPECULAR, light1[0]);
+    glLightfv(GL_LIGHT1, GL_POSITION, light1[1]);
+    glLightfv(GL_LIGHT1, GL_DIFFUSE, light1[2]);
+
+    glLightfv(GL_LIGHT0, GL_AMBIENT, light0[0]);
+    glLightfv(GL_LIGHT0, GL_DIFFUSE, light0[1]);
+    glLightfv(GL_LIGHT0, GL_SPECULAR, light0[2]);
+    glLightfv(GL_LIGHT0, GL_POSITION, light0[3]);
+
+    // Lighting
+    glEnable(GL_LIGHTING);
+    glEnable(GL_LIGHT0);
+    glEnable(GL_LIGHT1);
+    glEnable(GL_COLOR_MATERIAL);
 }
 
 // Model View Matriz
@@ -74,7 +87,7 @@ void make_draw(float dt) {
 
     glLoadIdentity();
     camera.activate();
-    enable_ligthing();
+    enable_lighting();
 
     // internal floor
     glPushMatrix();
@@ -209,6 +222,12 @@ void make_draw(float dt) {
         glCallList(objects[21].id);
     glPopMatrix();
 
+    // lamp
+    glPushMatrix();
+        glTranslatef(-46, 4, 41);
+        glCallList(objects[22].id);
+    glPopMatrix();
+
     // island chairs
     glPushMatrix();
         glTranslatef(0.0, 0.0, -4.0);
@@ -273,8 +292,11 @@ void make_draw(float dt) {
         glCallList(blender_objects[9].id);
     glPopMatrix();
 
+    // lamp
     glPushMatrix();
-        glTranslatef(40, debug_y, 35);
+        glTranslatef(-42, 7.25, 40);
+        glRotatef(90, 0.0, 1, 0.0);
+        glScalef(0.01, 0.01, 0.01);
         glCallList(blender_objects[10].id);
     glPopMatrix();
 
@@ -406,12 +428,6 @@ void init(GLFWwindow* window) {
 
     glEnable(GL_DEPTH_TEST);
 
-    // Lighting
-    glEnable(GL_LIGHTING);
-    glEnable(GL_LIGHT0);
-    glEnable(GL_LIGHT1);
-    glEnable(GL_COLOR_MATERIAL);
-
     // Set background color
     glClearColor(0.0, 0.0, 0.0, 0.1);
     glEnable(GL_TEXTURE_2D);
@@ -480,13 +496,13 @@ void init(GLFWwindow* window) {
     draw_island(objects[10].id, &textures_list[3]);
 
     // kitchen countertop
-    draw_cube(objects[11].id, 8, 3, 4, &textures_list[10]);
+    draw_cube(objects[11].id, 9, 3, 4, &textures_list[10]);
 
     // stove
     draw_cube(objects[12].id, 4, 4, 4, &textures_list[9]);
 
     // kitchen countertop
-    draw_cube(objects[13].id, 9, 3, 4, &textures_list[10]);
+    draw_cube(objects[13].id, 10, 3, 4, &textures_list[10]);
 
     // forniture
     draw_cube(objects[14].id, 22, 3, 4, &textures_list[10]);
@@ -505,6 +521,9 @@ void init(GLFWwindow* window) {
     draw_cube(objects[19].id, 0.25, 2, 0.25, &textures_list[11]);
     draw_cube(objects[20].id, 6, 0.1, 0.1, &textures_list[11]);
     draw_cube(objects[21].id, 0.1, 0.1, 6, &textures_list[11]);
+
+    // lamp
+    draw_cube(objects[22].id, 4, 3, 4, &textures_list[11]);
 
     // island_chair
     ObjLoader::load_object(blender_objects[1].id, "../objects/island_chair/island_chair.obj");
@@ -528,7 +547,7 @@ int main() {
 
     if (!glfwInit()) return -1;
 
-    window = glfwCreateWindow(WIDTH, HEIGHT, "Desenhando Esfera", NULL, NULL);
+    window = glfwCreateWindow(WIDTH, HEIGHT, "Kitchen Project", NULL, NULL);
 
     if (!window){
         glfwTerminate();

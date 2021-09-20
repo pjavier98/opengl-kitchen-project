@@ -34,84 +34,29 @@ void draw_cube(GLuint id, float width, float height, float depth, texture* textu
     glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
     texture->bind();
         // front face
+        glNormal3f(0.f, 0.f, 1.f);
         make_rectangle_face(v1, v2, v3, v4);
 
         // right face
+        glNormal3f(1.f, 0.f, 1.f);
         make_rectangle_face(v4, v3 ,v6, v5);
 
         // back face
+        glNormal3f(0.f, 0.f, -1.f);
         make_rectangle_face(v5, v8, v7, v6);
 
         // left face
+        glNormal3f(-1.f, 0.f, 0.f);
         make_rectangle_face(v1, v8, v7, v2);
 
         // top face
+        glNormal3f(0.f, 0.f, 0.f);
         make_rectangle_face(v1, v4, v5, v8);
 
         // bottom face
+        glNormal3f(0.f, -1.f, 0.f);
         make_rectangle_face(v2, v7, v6, v3);
     texture->unbind();
-    glEndList();
-}
-
-void draw_sphere(GLuint id, color color, GLfloat radius, GLuint n_stacks, GLuint n_sectors) {
-    vector<vector<GLuint>> indexes;
-    vector<vertex3> points;
-
-    GLfloat delta_phi = PI / float(n_stacks);
-    GLfloat delta_theta = 2 * PI / n_sectors;
-
-    for (GLuint i = 0; i <= n_stacks; i++) {
-        GLfloat phi = -PI / 2.0 + i * delta_phi;
-        GLfloat temp = radius * cos(phi);
-        GLfloat y = radius * sin(phi);
-
-        vector<GLuint> pointsSize;
-
-        for (GLuint j = 0; j < n_sectors; j++) {
-            GLfloat theta = j * delta_theta;
-            GLfloat x = temp * sin(theta);
-            GLfloat z = temp * cos(theta);
-
-            points.push_back(vertex3(x, y, z));
-
-            GLuint index = points.size() - 1;
-            pointsSize.push_back(index);
-        }
-
-        indexes.push_back(pointsSize);
-    }
-
-
-    glNewList(id, GL_COMPILE);
-        glColor3fv(color);
-        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-        glEnable(GL_CULL_FACE);
-        glFrontFace(GL_CCW);
-        glCullFace(GL_BACK);
-
-        for (GLuint i = 0; i < n_stacks; i++) {
-
-            glBegin(GL_TRIANGLE_STRIP);
-
-            for (GLuint j = 0; j < n_sectors; j++) {
-                GLuint index = indexes[i][j];
-
-                glVertex3fv(&points[index].x);
-                index = indexes[i + 1][j];
-                glVertex3fv(&points[index].x);
-
-                if (j == n_sectors - 1) {
-                    index = indexes[i][0];
-                    glVertex3fv(&points[index].x);
-                    index = indexes[i + 1][0];
-                    glVertex3fv(&points[index].x);
-                }
-            }
-
-            glEnd();
-        }
-    glDisable(GL_CULL_FACE);
     glEndList();
 }
 
