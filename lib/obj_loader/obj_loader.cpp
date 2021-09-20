@@ -79,7 +79,7 @@ void ObjLoader::load_object(unsigned & id, const char * file_path) {
 
     cout << "Total Vertex: " << vertices.size() << "\n";
     cout << "Total Normals: " << normals.size() << "\n";
-    cout << "Total Faces: " << faces.size() << "\n";
+    cout << "Total Faces: " << faces.size() << "\n" << endl;
 
     id = glGenLists(1);
 

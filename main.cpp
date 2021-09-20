@@ -19,6 +19,11 @@ static float door_x_position = -40.0;
 static bool is_window_open = false;
 static float window_y_position = 11.0;
 
+static bool is_fan_enabled = false;
+static float fan_velocity = 0.0;
+static float velocity = 0.5;
+
+
 static float debug_x = 0;
 static float debug_y = 0;
 static float debug_z = 0;
@@ -48,6 +53,20 @@ void make_resize(int frame_buffer_width, int frame_buffer_height) {
     glMatrixMode(GL_MODELVIEW);
 }
 
+void enable_ligthing() {
+    float light0[4][4] = {
+        { 0.1f, 0.1f, 0.1f, 0.1f}, // ambient
+        { 0.8f, 0.8f, 0.8f, 0.8f},	// diffuse
+        { 0.1f, 0.1f, 0.1f, 0.1f}, // specular
+        { 0.0f, 0.0f, -50.0f, 1.0f} // position
+    };
+
+    glLightfv(GL_LIGHT0, GL_AMBIENT, &light0[0][0]);
+    glLightfv(GL_LIGHT0, GL_DIFFUSE, &light0[1][0]);
+    glLightfv(GL_LIGHT0, GL_SPECULAR, &light0[2][0]);
+    glLightfv(GL_LIGHT0, GL_POSITION, &light0[3][0]);
+}
+
 // Model View Matriz
 // Translation (third) * Rotation (second) * Scale (first) * Vertex (draw)
 void make_draw(float dt) {
@@ -55,6 +74,7 @@ void make_draw(float dt) {
 
     glLoadIdentity();
     camera.activate();
+    enable_ligthing();
 
     // internal floor
     glPushMatrix();
@@ -165,9 +185,28 @@ void make_draw(float dt) {
         glCallList(objects[17].id);
     glPopMatrix();
 
+    // refrigerator
     glPushMatrix();
         glTranslatef(0, 10, -46);
         glCallList(objects[18].id);
+    glPopMatrix();
+
+    // fan
+    glPushMatrix();
+        glTranslatef(33, 20, 33);
+        glCallList(objects[19].id);
+    glPopMatrix();
+
+    glPushMatrix();
+        glTranslatef(33, 17.9, 33);
+        glRotatef(fan_velocity, 0, -1, 0);
+        glCallList(objects[20].id);
+    glPopMatrix();
+
+    glPushMatrix();
+        glTranslatef(33, 17.8, 33);
+        glRotatef(fan_velocity, 0, -1, 0);
+        glCallList(objects[21].id);
     glPopMatrix();
 
     // island chairs
@@ -234,6 +273,11 @@ void make_draw(float dt) {
         glCallList(blender_objects[9].id);
     glPopMatrix();
 
+    glPushMatrix();
+        glTranslatef(40, debug_y, 35);
+        glCallList(blender_objects[10].id);
+    glPopMatrix();
+
     if (is_door_open && door_x_position < -20) {
         door_x_position += 0.1;
     } else if (!is_door_open && door_x_position > -40) {
@@ -258,9 +302,35 @@ void make_draw(float dt) {
         glCallList(objects[7].id);
     glPopMatrix();
 
+    // rotate fan
+    glPushMatrix();
+
+        glCallList(objects[20].id);
+    glPopMatrix();
+
+    glPushMatrix();
+        glRotatef(fan_velocity, 0, -1, 0);
+        glCallList(objects[21].id);
+    glPopMatrix();
+
     angle += angular_velocity;
 
+    if (is_fan_enabled) {
+        fan_velocity += velocity;
+    } else if (fan_velocity != 0.0) {
+        fan_velocity += velocity;
+    }
+
     if (angle >= 360.0) angle = 0.0;
+    if (fan_velocity >= 360.0) {
+        fan_velocity = 0.0;
+
+        if (is_fan_enabled) {
+            if (velocity < 1.0) velocity += 0.25;
+        } else {
+            if (velocity > 0.25) velocity -= 0.25;
+        }
+    };
 }
 
 void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, int mods) {
@@ -294,7 +364,11 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
         is_window_open = true;
     } else if (key == GLFW_KEY_4) {
         is_window_open = false;
-    } else if (key == GLFW_KEY_E) {
+    }  else if (key == GLFW_KEY_5) {
+        is_fan_enabled = true;
+    }  else if (key == GLFW_KEY_6) {
+        is_fan_enabled = false;
+    }  else if (key == GLFW_KEY_E) {
         debug_scale += debug_value;
     } else if (key == GLFW_KEY_U) {
         debug_angle += debug_value;
@@ -326,15 +400,17 @@ void cursor_callback(GLFWwindow* window, double x_pos, double y_pos) {
 
 void init(GLFWwindow* window) {
     glfwSetCursorPosCallback(window, cursor_callback);
-    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+//    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     glfwMaximizeWindow(window);
     glfwSetKeyCallback(window, keyboard_callback);
 
     glEnable(GL_DEPTH_TEST);
-//    glEnable(GL_LIGHTING);
-//    glEnable(GL_LIGHT0);
-//    glEnable(GL_COLOR_MATERIAL);
 
+    // Lighting
+    glEnable(GL_LIGHTING);
+    glEnable(GL_LIGHT0);
+    glEnable(GL_LIGHT1);
+    glEnable(GL_COLOR_MATERIAL);
 
     // Set background color
     glClearColor(0.0, 0.0, 0.0, 0.1);
@@ -422,8 +498,13 @@ void init(GLFWwindow* window) {
     draw_cube(objects[16].id, 5, 5, 0.1, &textures_list[5]);
     draw_cube(objects[17].id, 5, 5, 0.1, &textures_list[6]);
 
-    // refrigarator
+    // refrigerator
     draw_cube(objects[18].id, 4, 10, 4, &textures_list[11]);
+
+    // fan
+    draw_cube(objects[19].id, 0.25, 2, 0.25, &textures_list[11]);
+    draw_cube(objects[20].id, 6, 0.1, 0.1, &textures_list[11]);
+    draw_cube(objects[21].id, 0.1, 0.1, 6, &textures_list[11]);
 
     // island_chair
     ObjLoader::load_object(blender_objects[1].id, "../objects/island_chair/island_chair.obj");
@@ -439,6 +520,7 @@ void init(GLFWwindow* window) {
     ObjLoader::load_object(blender_objects[7].id, "../objects/chair/source/chair.obj");
     ObjLoader::load_object(blender_objects[8].id, "../objects/chair/source/chair.obj");
     ObjLoader::load_object(blender_objects[9].id, "../objects/chair/source/chair.obj");
+    ObjLoader::load_object(blender_objects[10].id, "../objects/lamp/lamp.obj");
 }
 
 int main() {
